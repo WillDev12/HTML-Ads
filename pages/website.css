@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+body {
+	font-family: "Montserrat", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+* {
+	font-family: "Montserrat", sans-serif !important;
+}
+
+.container {
+  
+  background-color: rgba(250,250,250);
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+  border: 2px solid rgba(245,245,245);
+  margin: 10px;
+  padding: 19px;
+  text-align: center;
+  
+}
+
+.code {
+  
+  background-color: rgba(240,240,240);
+  padding: 5px;
+  border-left: solid 4px rgba(230,230,230);
+  border-radius: 4px;
+  width: 48.5%;
+  float: right;
+  position: relative;
+  
+}
+
+.copybutton {
+  
+  user-select: none;
+  width: 45px;
+  height: 23px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: 0.2s all;
+  opacity: 0.1;
+  border-radius: 5px;
+  font-size: 11px;
+  
+}
+
+.copybutton:hover {
+  
+  opacity: 1;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+  
+}
+
+.copybutton:active {
+  
+  background-color: rgba(220,220,220);
+  transform: scale(0.95)
+  
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
