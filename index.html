@@ -21,7 +21,7 @@
     
     <div class="container">
       
-      <div style="float:left;width:50%;border-right: solid 1px rgba(240,240,240);height:400px;">
+      <div style="float:left;width:50%;border-right: solid 1px rgba(240,240,240);height:300px;">
         
         <h5>What is this?</h5>
         
@@ -43,6 +43,8 @@
         
         <input type="button" onclick="location.href='https://willdev12.github.io/HTML-Ads/classification/push';" value="Push" style="width:110px;" />
         
+        <input type="button" onclick="location.href='https://willdev12.github.io/HTML-Ads/classification/banner-vertical';" value="Banner Vertical" style="width:150px;" />
+        
         <br>
         <br>
         <br>
@@ -53,11 +55,7 @@
         
         <div class="code">
           
-          &ltscript src="https://WillDev12.github.io/HTML-Ads/embed/push.js"&gt&lt/script&gt
-          
-          <br><br>
-          
-          &ltscript src="https://WillDev12.github.io/HTML-Ads/embed/banner.js"&gt&lt/script&gt
+          &ltscript src="https://WillDev12.github.io/HTML-Ads/embed/[CLASS].js"&gt&lt/script&gt
           
           <button class="copybutton" onclick="copyText()">copy</button>
           
@@ -70,7 +68,7 @@
     <script>
     
       function copyText() {
-        navigator.clipboard.writeText("<" + 'script src="https://willdev12.github.io/HTML-Ads/embed/banner.js"' + "><" + "/script>" + "\r\n\r\n" + "<" + 'script src="https://willdev12.github.io/HTML-Ads/embed/push.js"' + "><" + "/script>");
+        navigator.clipboard.writeText("<" + 'script src="https://willdev12.github.io/HTML-Ads/embed/[CLASS].js"' + "><" + "/script>");
         alert("Text copied");
       }
     
